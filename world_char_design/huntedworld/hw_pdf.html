@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The World of Hunted PDF - Sean Francis</title>
+    <link rel="stylesheet" href="../../css/pdf.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">
+                <a href="../../index.html"><img src="../../img/port_logo_165.png" alt="Logo"></a>
+            </div>
+            <div id="name">
+                <h1 id="portname">Sean Francis</h1>
+            </div>
+            <div id="tagline">
+                <h2 id="tag">&quot;I've Written Your Story&quot;</h2>
+            </div>
+
+            <div id="mainnav">
+                <ul>
+                    <li id="mainnavleft"><a href="../../written_works/index.html">Written Works</a></li>
+                    <li id="mainnavcenter"><a href="../index.html">World/Character Design</a></li>
+                    <li id="mainnavdp"><a href="../../digitalpainting/index.html">Digital Paintings</a></li>
+                    <li id="mainnavright"><a href="../../about/index.html">About</a></li>
+                </ul>
+            </div>
+
+            <div id="breadcrumb"><a href="../../index.html">Home</a> -> <a href="../index.html">World and Character Design</a> -> <a href="index.html">The World of Hunted</a> -> <a href="hw_pdf.html">The World of Hunted (PDF)</a></div>
+        </header>
+
+        <div id="sidemainnav" class="mainsidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMainNav()">&times;</a>
+
+            <div id="sidelogo">
+                <a href="../../index.html"><img src="../../img/port_logo_165.png" alt="Logo"></a>
+            </div>
+            <div id="sidename">
+                <h1 id="sideportname">Sean Francis</h1>
+            </div>
+            <div id="sidetagline">
+                <h2 id="sidetag">&quot;I've Written Your Story&quot;</h2>
+            </div>
+
+            <div id="sidebreadcrumb"><a href="../../index.html">Home</a> -> <a href="../index.html">World and Character Design</a> -> <a href="index.html">The World of Hunted</a> -> <a href="hw_pdf.html">The World of Hunted (PDF)</a></div>
+
+            <div id="pullednav">
+                <ul>
+                    <li><a href="../../written_works/index.html">Written Works</a></li>
+                    <li><a href="../index.html">World/Character Design</a></li>
+                    <li><a href="../../digitalpainting/index.html">Digital Paintings</a></li>
+                    <li><a href="../../about/index.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span id="mainsideimg" onclick="openMainNav()"><img src="../../img/icon_pullout_mainnav.png"></span>
+
+
+        <div id="pdfarea">
+
+            <div id="empty" width="40px" height="30px"></div>
+            <img id="previous" alt="Previous Page" src="../../img/prevpage_icon.png">
+            <canvas id="pdfview"></canvas>
+            <img id="next" alt="Next Page" src="../../img/nextpage_icon.png">
+
+            <span id="page_display">Page: <span id="page_num"></span> / <span id="page_count"></span></span>
+
+        </div>
+
+        <div id="controlpanel">
+            <div id="displaycontrol">
+                <img id="prevclear" alt="Decrease Clarity" src="../../img/prevpage_icon.png">
+                <span id="clear_text">Clarity: <span id="clear_num"></span></span>
+                <img id="nextclear" alt="Increase Clarity" src="../../img/nextpage_icon.png">
+            </div>
+
+            <br>
+
+            <div id="presentationcontrol">
+                <img src="../../img/full_screen_button.png" alt="Show Fullscreen" onclick="showPresentation()" id="presentationbtn" class="dropbtn">
+            </div>
+
+            <br>
+
+            <ul id="dropdowns">
+                <li>
+                    <div id="fontcontrol">
+                        <img src="../../img/change_font_button.png" alt="Change Font" onclick="showFont()" class="dropbtn">
+                        <div id="dropdown" class="dropdown-content">
+                            <a href="#" onclick="loadBaskerville()">Change to <span class="libreFont">Libre Baskerville</span></a>
+                            <a href="#" onclick="loadHelvetica()">Change to <span class="helFont">Helvetica</span></a>
+                            <a href="#" onclick="loadTypewriter()">Change to <span class="twFont">Veteran Typewriter</span></a>
+                        </div>
+                    </div>
+                </li>
+
+                <br>
+
+                <li>
+                    <div id="downloadcontrol">
+                        <img src="../../img/download_pdf_button.png" alt="Download PDF" onclick="showDownloads()" class="dropbtn">
+                        <div id="dropdownDL" class="dropdown-content">
+                            <a href="../../pdf/huntedworld_libre.pdf" download>In <span class="libreFont">Libre Baskerville</span></a>
+                            <a href="../../pdf/huntedworld_helvetica.pdf" download>In <span class="helFont">Helvetica</span></a>
+                            <a href="../../pdf/huntedworld_typewriter.pdf" download>In <span class="twFont">Veteran Typewriter</span></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="worldsidecontrolnav" class="worldcontrolsidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeControlNav()">&times;</a>
+
+        <div id="sidedisplaycontrol">
+            <img id="sideprevclear" alt="Decrease Clarity" src="../../img/prevpage_icon.png">
+            <span id="sideclear_text">Clarity: <span id="sideclear_num"></span></span>
+            <img id="sidenextclear" alt="Increase Clarity" src="../../img/nextpage_icon.png">
+        </div>
+
+        <br>
+
+        <div id="sidepresentationcontrol">
+            <img src="../../img/full_screen_button.png" alt="Show Fullscreen" onclick="showPresentation()" id="sidepresentationbtn" class="dropbtn">
+        </div>
+
+        <br>
+
+        <ul id="sidedropdowns">
+            <li>
+                <div id="sidefontcontrol">
+                    <img src="../../img/change_font_button.png" alt="Change Font" onclick="showSideFont()" class="dropbtn">
+                    <div id="sidedropdown" class="dropdown-content">
+                        <a href="#" onclick="loadBaskerville()">Change to <span class="libreFont">Libre Baskerville</span></a>
+                        <a href="#" onclick="loadHelvetica()">Change to <span class="helFont">Helvetica</span></a>
+                        <a href="#" onclick="loadTypewriter()">Change to <span class="twFont">Veteran Typewriter</span></a>
+                    </div>
+                </div>
+            </li>
+
+            <br>
+
+            <li>
+                <div id="sidedownloadcontrol">
+                    <img src="../../img/download_pdf_button.png" alt="Download PDF" onclick="showSideDownloads()" class="dropbtn">
+                    <div id="sidedropdownDL" class="dropdown-content">
+                        <a href="../../pdf/huntedworld_libre.pdf" download>In <span class="libreFont">Libre Baskerville</span></a>
+                        <a href="../../pdf/huntedword_helvetica.pdf" download>In <span class="helFont">Helvetica</span></a>
+                        <a href="../../pdf/huntedword_typewriter.pdf" download>In <span class="twFont">Veteran Typewriter</span></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <span id="worldcontrolsideimg" onclick="openControlNav()"><img src="../../img/icon_pullout_pdfcontrol.png"></span>
+
+
+    <footer>
+        <div id="footercontent">
+            <ul>
+                <li>
+                    <div class="footersection">
+                        <h3><a href="../../written_works/index.html">Written Works</a></h3>
+                        <ul>
+                            <li><a href="../../written_works/augustfires/index.html">August Fires</a> //</li>
+                            <li><a href="../../written_works/death/index.html">Death</a> //</li>
+                            <li><a href="../../written_works/dimensionalchain/index.html">Dimensional Chain</a> //</li>
+                            <li><a href="../../written_works/dragonraid/index.html">Dragon Raid</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footersection">
+                        <h3><a href="../index.html">World/Character Design</a></h3>
+                        <ul>
+                            <li><a href="index.html">The World of Hunted</a> //</li>
+                            <li><a href="../davidparker/index.html">David Parker</a> //</li>
+                            <li><a href="../leahkaitlyn/index.html">Leah Kaitlyn</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footersection">
+                        <h3><a href="../../digitalpainting/index.html">Digital Paintings</a></h3>
+                        <ul>
+                            <li><a href="../../digitalpainting/augustfires/index.html">August Fires</a> //</li>
+                            <li><a href="../../digitalpainting/death/index.html">Death</a> //</li>
+                            <li><a href="../../digitalpainting/dimensionalchain/index.html">Dimensional Chain</a> //</li>
+                            <li><a href="../../digitalpainting/dragonraid/index.html">Dragon Raid</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footersection">
+                        <h3><a href="../../about/index.html">About</a></h3>
+                        <ul>
+                            <li><a href="../../about/index.html">About Sean</a> //</li>
+                            <li><a href="../../about/resume/index.html">Resume</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="copyright">
+            <small>Sean Francis &copy; 2017</small>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../../js/build/pdf.js"></script>
+
+    <script>
+        /**
+         * Document Related Variables
+         **/
+        var doc = "huntedworld";
+        var url = "../../pdf/" + doc + "_libre.pdf";
+        var pdfdoc = null;
+        var pageNum = 1;
+        var pageRendering = false;
+        var pageNumPending = null;
+        var scale = 1;
+        var canvas = document.getElementById("pdfview");
+        var ctx = canvas.getContext("2d");
+        var font = 1; /* 1=Libre 2=Hel 3=TW*/
+
+        /**
+         * Control Related Variables
+         **/
+        var prevButton = document.getElementById("previous");
+        var nextButton = document.getElementById("next");
+        var clearUp = document.getElementById("nextclear");
+        var clearDown = document.getElementById("prevclear");
+        var clearMin = 0.5;
+        var clearMax = 2;
+
+        /**
+         * Specific, Generalized Page Variables
+         **/
+        var coverPage = 1;
+
+        /**
+         * Libre Baskerville Part Pages Variables
+         **/
+        var libreOne = 2;
+        var libreTwo = 3;
+        var libreThree = 4;
+        var libreFour = 5;
+        var libreFive = 6;
+        var libreSix = 7;
+        var libreSeven = 8;
+        var libreEight = null;
+
+        /**
+         * Helvetica Part Pages Variables
+         **/
+        var helOne = 2;
+        var helTwo = 3;
+        var helThree = 4;
+        var helFour = 5;
+        var helFive = 6;
+        var helSix = 7;
+        var helSeven = null;
+        var helEight = null;
+
+        /**
+         * Typewriter Part Pages Variables
+         **/
+        var twOne = 2;
+        var twTwo = 3;
+        var twThree = 4;
+        var twFour = 5;
+        var twFive = 6;
+        var twSix = 7;
+        var twSeven = null;
+        var twEight = null;
+
+
+        PDFJS.getDocument(url).then(function(pdfDoc_) {
+            pdfDoc = pdfDoc_;
+            document.getElementById('page_count').textContent = pdfDoc.numPages;
+
+            // Initial/first page rendering
+            renderPage(1);
+
+
+
+        });
+
+        /**
+         * Get page info from document, resize canvas accordingly, and render page.
+         * @param num Page number.
+         */
+        function renderPage(num) {
+            pageRendering = true;
+            // Using promise to fetch the page
+            pdfDoc.getPage(num).then(function(page) {
+                var viewport = page.getViewport(scale);
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+
+
+                // Render PDF page into canvas context
+                var renderContext = {
+                    canvasContext: ctx,
+                    viewport: viewport
+                };
+
+                var renderTask = page.render(renderContext);
+
+
+
+                // Wait for rendering to finish
+                renderTask.promise.then(function() {
+                    pageRendering = false;
+                    if (pageNumPending !== null) {
+                        // New page rendering is pending
+                        renderPage(pageNumPending);
+                        pageNumPending = null;
+                    }
+                });
+            });
+
+
+
+            // Update page counters
+            document.getElementById("page_num").textContent = pageNum;
+
+            //Update Clarity
+            document.getElementById("clear_num").textContent = (scale * 100) + "%";
+
+            if (pageNum <= 1) {
+                prevButton.style.display = "none";
+                canvas.style.marginLeft = 80 + "px";
+            } else if (pageNum >= pdfDoc.numPages) {
+                nextButton.style.display = "none";
+                canvas.marginRight = 60 + "px";
+            } else {
+                prevButton.style.display = "initial";
+                canvas.style.marginLeft = 35 + "px";
+                nextButton.style.display = "initial";
+                canvas.marginRight = 0 + "px";
+            }
+
+            if (scale <= clearMin) {
+                clearDown.style.display = "none";
+                document.getElementById("clear_text").style.marginLeft = 40 + "px";
+            } else if (scale >= clearMax) {
+                clearUp.style.display = "none";
+                document.getElementById("clear_text").style.marginRight = 40 + "px";
+            } else {
+                clearDown.style.display = "initial";
+                clearUp.style.display = "initial";
+                document.getElementById("clear_text").style.margin = 0 + "px";
+            }
+
+            /*
+             ** Updating Part One Links
+             */
+            if (font == 1 && libreOne == null) {
+                document.getElementById("partOneLink").style.display = "none";
+                document.getElementById("partOne").style.paddingBottom = 0;
+                //document.getElementById("partOne").style.position = "absolute";
+            } else if (font == 2 && helOne == null) {
+                document.getElementById("partOneLink").style.display = "none";
+                document.getElementById("partOne").style.paddingBottom = 0;
+                //document.getElementById("partOne").style.position = "absolute";
+            } else if (font == 3 && twOne == null) {
+                document.getElementById("partOneLink").style.display = "none";
+                document.getElementById("partOne").style.paddingBottom = 0;
+                //document.getElementById("partOne").style.position = "absolute";
+            } else {
+                document.getElementById("partOneLink").style.display = "block";
+                document.getElementById("partOne").style.paddingBottom = 15 + "px";
+                //document.getElementById("partOne").style.position = "initial";
+            }
+
+            /*
+             ** Updating Part Two Links
+             */
+            if (font == 1 && libreTwo == null) {
+                document.getElementById("partTwoLink").style.display = "none";
+                document.getElementById("partTwo").paddingBottom = 0;
+            } else if (font == 2 && helTwo == null) {
+                document.getElementById("partTwoLink").style.display = "none";
+                document.getElementById("partTwo").paddingBottom = 0;
+            } else if (font == 3 && twTwo == null) {
+                document.getElementById("partTwoLink").style.display = "none";
+                document.getElementById("partTwo").paddingBottom = 0;
+            } else {
+                document.getElementById("partTwoLink").style.display = "block";
+                document.getElementById("partTwo").style.paddingBottom = 15 + "px";
+            }
+
+            /*
+             ** Updating Part Three Links
+             */
+            if (font == 1 && libreThree == null) {
+                document.getElementById("partThreeLink").style.display = "none";
+                document.getElementById("partThree").paddingBottom = 0;
+            } else if (font == 2 && helThree == null) {
+                document.getElementById("partThreeLink").style.display = "none";
+                document.getElementById("partThree").paddingBottom = 0;
+            } else if (font == 3 && twThree == null) {
+                document.getElementById("partThreeLink").style.display = "none";
+                document.getElementById("partThree").paddingBottom = 0;
+            } else {
+                document.getElementById("partThreeLink").style.display = "block";
+                document.getElementById("partThree").style.paddingBottom = 15 + "px";
+            }
+
+            /*
+             ** Updating Part Four Links
+             */
+            if (font == 1 && libreFour == null) {
+                document.getElementById("partFourLink").style.display = "none";
+                document.getElementById("partFour").paddingBottom = 0;
+            } else if (font == 2 && helFour == null) {
+                document.getElementById("partFourLink").style.display = "none";
+                document.getElementById("partFour").paddingBottom = 0;
+            } else if (font == 3 && twFour == null) {
+                document.getElementById("partFourLink").style.display = "none";
+                document.getElementById("partFour").paddingBottom = 0;
+            } else {
+                document.getElementById("partFourLink").style.display = "block";
+                document.getElementById("partFour").style.paddingBottom = 15 + "px";
+            }
+
+            /*
+             ** Updating Part Five Links
+             */
+            if (font == 1 && libreFive == null) {
+                document.getElementById("partFiveLink").style.display = "none";
+                document.getElementById("partFive").paddingBottom = 0;
+            } else if (font == 2 && helFive == null) {
+                document.getElementById("partFiveLink").style.display = "none";
+                document.getElementById("partFive").paddingBottom = 0;
+            } else if (font == 3 && twFive == null) {
+                document.getElementById("partFiveLink").style.display = "none";
+                document.getElementById("partFive").paddingBottom = 0;
+            } else {
+                document.getElementById("partFiveLink").style.display = "block";
+                document.getElementById("partFive").style.paddingBottom = 15 + "px";
+            }
+
+            /*
+             ** Updating Part Six Links
+             */
+            if (font == 1 && libreSix == null) {
+                document.getElementById("partSixLink").style.display = "none";
+                document.getElementById("partSix").paddingBottom = 0;
+            } else if (font == 2 && helSix == null) {
+                document.getElementById("partSixLink").style.display = "none";
+                document.getElementById("partSix").paddingBottom = 0;
+            } else if (font == 3 && twSix == null) {
+                document.getElementById("partSixLink").style.display = "none";
+                document.getElementById("partSix").paddingBottom = 0;
+            } else {
+                document.getElementById("partSixLink").style.display = "block";
+                document.getElementById("partSix").style.paddingBottom = 15 + "px";
+            }
+
+            /*
+             ** Updating Part Seven Links
+             */
+            if (font == 1 && libreSeven == null) {
+                document.getElementById("partSevenLink").style.display = "none";
+                document.getElementById("partSeven").paddingBottom = 0;
+            } else if (font == 2 && helSeven == null) {
+                document.getElementById("partSevenLink").style.display = "none";
+                document.getElementById("partSeven").paddingBottom = 0;
+            } else if (font == 3 && twSeven == null) {
+                document.getElementById("partSevenLink").style.display = "none";
+                document.getElementById("partSeven").paddingBottom = 0;
+            } else {
+                document.getElementById("partSevenLink").style.display = "block";
+                document.getElementById("partSeven").style.paddingBottom = 15 + "px";
+            }
+
+            /*
+             ** Updating Part Eight Links
+             */
+            if (font == 1 && libreEight == null) {
+                document.getElementById("partEightLink").style.display = "none";
+                document.getElementById("partEight").style.paddingBottom = 0;
+                //document.getElementById("partOne").style.position = "absolute";
+            } else if (font == 2 && helEight == null) {
+                document.getElementById("partEightLink").style.display = "none";
+                document.getElementById("partEight").style.paddingBottom = 0;
+                //document.getElementById("partEight").style.position = "absolute";
+            } else if (font == 3 && twEight == null) {
+                document.getElementById("partEightLink").style.display = "none";
+                document.getElementById("partEight").style.paddingBottom = 0;
+                //document.getElementById("partEight").style.position = "absolute";
+            } else {
+                document.getElementById("partEightLink").style.display = "block";
+                //document.getElementById("partEight").style.position = "static";
+                document.getElementById("partEight").style.paddingBottom = 15 + "px";
+            }
+        }
+
+        /**
+         * If another page rendering in progress, waits until the rendering is
+         * finised. Otherwise, executes rendering immediately.
+         */
+        function queueRenderPage(num) {
+            if (pageRendering) {
+                pageNumPending = num;
+            } else {
+                renderPage(num);
+            }
+        }
+
+        /**
+         * Displays previous page.
+         */
+        function onPrevPage() {
+            if (pageNum <= 1) {
+
+                return;
+            }
+            pageNum--;
+            queueRenderPage(pageNum);
+        }
+        prevButton.addEventListener('click', onPrevPage);
+
+        /**
+         * Displays next page.
+         */
+        function onNextPage() {
+            if (pageNum >= pdfDoc.numPages) {
+                return;
+            }
+            pageNum++;
+            queueRenderPage(pageNum);
+        }
+        nextButton.addEventListener('click', onNextPage);
+
+        /**
+         * Decreases PDF Clarity
+         */
+        function decreaseClarity() {
+            if (scale <= clearMin) {
+                return;
+            }
+            scale -= 0.25;
+            queueRenderPage(pageNum);
+        }
+        clearDown.addEventListener('click', decreaseClarity);
+
+        /**
+         * Increases PDF Clarity
+         */
+        function increaseClarity() {
+            if (scale >= clearMax) {
+                return;
+            }
+            scale += 0.25;
+            queueRenderPage(pageNum);
+        }
+        clearUp.addEventListener('click', increaseClarity);
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function showFont() {
+            document.getElementById("dropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+
+        /**
+         * Load the file in Georgia Font
+         **/
+        function loadBaskerville() {
+            url = "../../pdf/" + doc + "_libre.pdf";
+            font = 1;
+
+            PDFJS.getDocument(url).then(function(pdfDoc_) {
+                pdfDoc = pdfDoc_;
+                document.getElementById('page_count').textContent = pdfDoc.numPages;
+
+                // Initial/first page rendering
+                renderPage(pageNum);
+
+            });
+        }
+
+        /**
+         * Load the file in Typewritter Font
+         **/
+        function loadHelvetica() {
+            url = "../../pdf/" + doc + "_helvetica.pdf";
+            font = 2
+
+            PDFJS.getDocument(url).then(function(pdfDoc_) {
+                pdfDoc = pdfDoc_;
+                document.getElementById('page_count').textContent = pdfDoc.numPages;
+
+                // Initial/first page rendering
+                renderPage(pageNum);
+
+            });
+        }
+
+        /**
+         * Load the file in Typewritter Font
+         **/
+        function loadTypewriter() {
+            url = "../../pdf/" + doc + "_typewriter.pdf";
+            font = 3;
+
+            PDFJS.getDocument(url).then(function(pdfDoc_) {
+                pdfDoc = pdfDoc_;
+                document.getElementById('page_count').textContent = pdfDoc.numPages;
+
+                // Initial/first page rendering
+                renderPage(pageNum);
+
+            });
+        }
+
+        /**
+         * Show Current File in PDF.js Viewer (Full Screen)
+         **/
+        function showPresentation() {
+            window.location.href = url + "#page=" + pageNum;
+        }
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function showDownloads() {
+            document.getElementById("dropdownDL").classList.toggle("show");
+        }
+
+        /**
+         * Loads Story Cover
+         **/
+        function loadCover() {
+            pageNum = coverPage;
+
+            queueRenderPage(pageNum);
+        }
+
+        /**
+         * Loads Story Part One
+         **/
+        function loadPartOne() {
+            if (font == 1) {
+                pageNum = libreOne;
+            } else if (font == 2) {
+                pageNum = helOne;
+            } else {
+                pageNum = twOne;
+            }
+
+            queueRenderPage(pageNum);
+        }
+
+        /**
+         * Loads Story Part Two
+         **/
+        function loadPartTwo() {
+            if (font == 1) {
+                pageNum = libreTwo;
+            } else if (font == 2) {
+                pageNum = helTwo;
+            } else {
+                pageNum = twTwo;
+            }
+
+            queueRenderPage(pageNum);
+        }
+
+        /**
+         * Loads Story Part Three
+         **/
+        function loadPartThree() {
+            if (font == 1) {
+                pageNum = libreThree;
+            } else if (font == 2) {
+                pageNum = helThree;
+            } else {
+                pageNum = twThree;
+            }
+
+            queueRenderPage(pageNum);
+        }
+
+        /**
+         * Loads Story Part Four
+         **/
+        function loadPartFour() {
+            if (font == 1) {
+                pageNum = libreFour;
+            } else if (font == 2) {
+                pageNum = helFour;
+            } else {
+                pageNum = twFour;
+            }
+
+            queueRenderPage(pageNum);
+        }
+
+        /**
+         * Loads Story Part Five
+         **/
+        function loadPartFive() {
+            if (font == 1) {
+                pageNum = libreFive;
+            } else if (font == 2) {
+                pageNum = helFive;
+            } else {
+                pageNum = twFive;
+            }
+
+            queueRenderPage(pageNum);
+        }
+
+        /**
+         * Loads Story Part Six
+         **/
+        function loadPartSix() {
+            if (font == 1) {
+                pageNum = libreSix;
+            } else if (font == 2) {
+                pageNum = helSix;
+            } else {
+                pageNum = twSix;
+            }
+
+            queueRenderPage(pageNum);
+        }
+
+        /**
+         * Loads Story Part Seven
+         **/
+        function loadPartSeven() {
+            if (font == 1) {
+                pageNum = libreSeven;
+            } else if (font == 2) {
+                pageNum = helSeven;
+            } else {
+                pageNum = twSeven;
+            }
+
+            queueRenderPage(pageNum);
+        }
+
+        /**
+         * Loads Story Part Eight
+         **/
+        function loadPartEight() {
+            if (font == 1) {
+                pageNum = libreEight;
+            } else if (font == 2) {
+                pageNum = helEight;
+            } else {
+                pageNum = twEight;
+            }
+
+            queueRenderPage(pageNum);
+        }
+
+        /* Set the width of the side navigation to 250px */
+        function openMainNav() {
+            document.getElementById("sidemainnav").style.width = "95%";
+            document.getElementById("sidemainnav").style.borderRadius = "50px";
+            document.getElementById("sidemainnav").style.borderWidth = "5px";
+            document.getElementById("mainsideimg").style.display = "none";
+
+            document.getElementById("sidepartsnav").style.width = "0";
+            document.getElementById("sidepartsnav").style.borderRadius = "0";
+            document.getElementById("sidepartsnav").style.borderWidth = "0";
+            document.getElementById("partssideimg").style.display = "block";
+
+            document.getElementById("worldsidecontrolnav").style.width = "0";
+            document.getElementById("worldsidecontrolnav").style.borderRadius = "0";
+            document.getElementById("worldsidecontrolnav").style.borderWidth = "0";
+            document.getElementById("worldcontrolsideimg").style.display = "block";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeMainNav() {
+            document.getElementById("sidemainnav").style.width = "0";
+            document.getElementById("sidemainnav").style.borderRadius = "0";
+            document.getElementById("sidemainnav").style.borderWidth = "0";
+            document.getElementById("mainsideimg").style.display = "block";
+        }
+
+        /* Set the width of the side navigation to 250px */
+        function openControlNav() {
+            document.getElementById("worldsidecontrolnav").style.width = "300px";
+            document.getElementById("worldsidecontrolnav").style.borderRadius = "50px";
+            document.getElementById("worldsidecontrolnav").style.borderWidth = "5px";
+            document.getElementById("worldcontrolsideimg").style.display = "none";
+
+            document.getElementById("sidemainnav").style.width = "0";
+            document.getElementById("sidemainnav").style.borderRadius = "0";
+            document.getElementById("sidemainnav").style.borderWidth = "0";
+            document.getElementById("mainsideimg").style.display = "block";
+
+            document.getElementById("sidepartsnav").style.width = "0";
+            document.getElementById("sidepartsnav").style.borderRadius = "0";
+            document.getElementById("sidepartsnav").style.borderWidth = "0";
+            document.getElementById("partssideimg").style.display = "block";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeControlNav() {
+            document.getElementById("worldsidecontrolnav").style.width = "0";
+            document.getElementById("worldsidecontrolnav").style.borderRadius = "0";
+            document.getElementById("worldsidecontrolnav").style.borderWidth = "0";
+            document.getElementById("worldcontrolsideimg").style.display = "block";
+        }
+
+    </script>
+
+</body>
+
+</html>
