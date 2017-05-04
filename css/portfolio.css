@@ -1,0 +1,871 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*CSS Reset Ends*/
+
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('../fonts/librebaskerville-regular-webfont.woff2') format('woff2'), url('../fonts/librebaskerville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'libre_baskervillebold';
+    src: url('../fonts/librebaskerville-bold-webfont.woff2') format('woff2'), url('../fonts/librebaskerville-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'libre_baskervilleitalic';
+    src: url('../fonts/librebaskerville-italic-webfont.woff2') format('woff2'), url('../fonts/librebaskerville-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'veteran_typewriterregular';
+    src: url('../fonts/veteran_typewriter-webfont.woff2') format('woff2'), url('../fonts/veteran_typewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#resumetext {
+    width: 500px;
+    font-family: 'libre_baskervilleregular';
+    padding-bottom: 20px;
+    line-height: 1.25em;
+    margin: 0 auto;
+}
+
+.designsection {
+    font-family: 'libre_baskervillebold';
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 'libre_baskervillebold';
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'libre_baskervilleregular';
+    padding-bottom: 20px;
+}
+
+i {
+    font-family: 'libre_baskervilleitalic';
+}
+
+body {
+    background-color: #889471;
+    font-family: 'libre_baskervillebold';
+}
+
+header {
+    padding-bottom: 45px;
+    padding-top: 15px;
+}
+
+#breadcrumb {
+    font-family: 'libre_baskervilleregular';
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+}
+
+#breadcrumb a {
+    font-family: 'libre_baskervilleitalic';
+}
+
+#logo {
+    float: left;
+    padding-bottom: 25px;
+    padding-right: 50px;
+}
+
+#name {
+    float: left;
+    font-size: 32px;
+    padding-top: 35px;
+}
+
+#tagline {
+    font-size: 22px;
+    font-family: 'libre_baskervilleitalic';
+    padding-top: 90px;
+}
+
+header #mainnav {
+    font-family: 'libre_baskervilleregular';
+    float: left;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 950px;
+}
+
+#mainnav {
+    background-color: #82a182;
+    border-radius: 50px;
+    border: 5px solid #435943;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 22px;
+    width: 875px;
+}
+
+#mainnav ul {
+    padding-left: 10px;
+}
+
+#mainnav ul li {
+    display: inline;
+}
+
+#mainnav a {
+    text-decoration: none;
+    color: black;
+}
+
+#mainnavleft {
+    border-right: 2px solid #435943;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#mainnavright {
+    border-left: 2px solid #435943;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#mainnavcenter {
+    border-right: 2px solid #435943;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#mainnavdp {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#pdfarea {
+    background-color: #b0bc98;
+    border-radius: 25px;
+    float: left;
+    width: 630px;
+    padding-left: 25px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+#htmlarea {
+    background-color: #b0bc98;
+    border-radius: 25px;
+    float: left;
+    width: 630px;
+    padding-left: 25px;
+    margin-bottom: 50px;
+}
+
+#worksarea {
+    background-color: #b0bc98;
+    border-radius: 25px;
+    float: right;
+    width: 950px;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+#subnav {
+    background-color: #82a182;
+    border-radius: 25px;
+    border: 5px solid #435943;
+    float: right;
+    width: 200px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+#cover,
+#partOne,
+#partTwo,
+#partThree,
+#partFour,
+#partFive,
+#partSix,
+#partSeven,
+#partEight {
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+#subnav li a {
+    font-family: 'libre_baskervilleitalic';
+}
+
+#htmlsubnav {
+    position: fixed;
+    top: 325px;
+    left: 1050px;
+    background-color: #82a182;
+    border-radius: 25px;
+    border: 5px solid #435943;
+    float: right;
+    width: 200px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+#htmlsubnav li {
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+#htmlsubnav li a {
+    font-family: 'libre_baskervilleitalic';
+}
+
+#controlpanel {
+    background-color: #82a182;
+    border-radius: 25px;
+    border: 5px solid #435943;
+    float: right;
+    width: 200px;
+    padding-right: 25px;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+
+#displaycontrol {
+    text-align: center;
+    padding-left: 20px;
+}
+
+.libreFont {
+    font-family: 'libre_baskervilleregular';
+}
+
+.helFont {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.twFont {
+    font-family: 'veteran_typewriterregular';
+}
+
+footer {
+    background-color: #5c6b52;
+    clear: both;
+}
+
+#footercontent {
+    margin: 0 auto;
+    width: 950px;
+}
+
+.footersection {
+    width: 130px;
+    font-family: 'libre_baskervilleregular';
+    padding: 15px;
+    display: inline;
+}
+
+#footercontent ul li {
+    display: inline;
+}
+
+.footersection h3 {
+    font-family: 'libre_baskervillebold';
+    padding-bottom: 10px;
+}
+
+#fontcontrol,
+#downloadcontrol,
+#presentationcontrol {
+    padding-left: 10px;
+}
+
+#fontcontrol img {
+    width: 165px;
+}
+
+#downloadcontrol img {
+    width: 165px;
+}
+
+#presentationcontrol img {
+    width: 165px;
+    text-align: center;
+}
+
+#previous,
+#next {
+    width: 40px;
+    padding-bottom: 300px;
+}
+
+#next {
+    padding-left: 30px;
+}
+
+#pdfview {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 450px;
+    border: 1px solid black;
+    margin-left: 35px;
+}
+
+#prevclear,
+#nextclear {
+    width: 30px;
+}
+
+#page_display {
+    width: 345px;
+    background-color: #b4cdb4;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    margin-left: 225px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+#clear_text,
+#clear_num {
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+
+#page_display {
+    text-align: center;
+}
+
+#footercontent a {
+    text-decoration: none;
+    color: black;
+}
+
+#copyright {
+    padding-left: 1125px;
+}
+
+#coverimg {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#parttext {
+    width: 600px;
+    font-family: 'libre_baskervilleregular';
+}
+
+#partcontent {
+    margin: 20px auto;
+    line-height: 1.25em;
+}
+
+#parttitle {
+    font-size: 32px;
+    text-align: center;
+}
+
+#topLink {
+    padding-top: 50px;
+    font-family: 'libre_baskervilleitalic';
+    padding-bottom: 15px;
+    padding-left: 20px;
+    float: right;
+}
+
+.storyinfo {
+    padding-left: 115px;
+    padding-bottom: 225px;
+    padding-top: 50px;
+}
+
+#storyinfolast {
+    padding-left: 115px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.storycoverimg {
+    float: left;
+}
+
+.storylink {
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+    padding-left: 225px;
+}
+
+.storylinkd {
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+    padding-left: 250px;
+}
+
+.storylinkdc {
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+    padding-left: 190px;
+}
+
+.storysummary {
+    width: 350px;
+    padding-left: 425px;
+    font-family: 'libre_baskervilleitalic';
+    font-size: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 1.5em;
+}
+
+.pdflink,
+.htmllink {
+    font-family: 'libre_baskervilleitalic';
+}
+
+.pdflink {
+    padding-left: 115px;
+}
+
+.htmllink {
+    padding-left: 30px;
+}
+
+.download {
+    width: 350px;
+    padding-left: 415px;
+    padding-top: 25px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#pageTitle {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.worldinfo,
+.charinfo,
+.paintinginfo,
+.hpaintinginfo {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    line-height: 1.5em;
+}
+
+.worldsummary,
+.charsummary {
+    font-family: 'libre_baskervilleitalic';
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.designdownload {
+    width: 350px;
+    padding-left: 60px;
+    padding-top: 25px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.designpdflink,
+.designhtmllink,
+.pnglink,
+.lightboxlink,
+.resumepdflink,
+.resumehtmllink {
+    font-family: 'libre_baskervilleitalic';
+}
+
+.designpdflink {
+    padding-left: 75px;
+}
+
+.designhtmllink {
+    padding-left: 30px;
+}
+
+.worldlink,
+.charlink,
+.worldlinkH,
+.paintinglink,
+.resumelink {
+    padding-left: 185px;
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+}
+
+.worldlinkH {
+    padding-left: 155px;
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+}
+
+.worldinfo img,
+.charinfo img,
+.paintinginfo img,
+.hpaintinginfo img {
+    padding-left: 95px;
+    padding-bottom: 20px;
+}
+
+.storylinkhome {
+    padding-left: 200px;
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+}
+
+.paintingdownload {
+    padding-left: 0px;
+    padding-top: 25px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.lightboxlink {
+    padding-left: 100px;
+}
+
+.paintinginfo img {
+    padding-left: 60px;
+}
+
+.paintinglink {
+    padding-left: 125px;
+}
+
+.hpaintinginfo img {
+    padding-left: 0px;
+}
+
+.paintinglinkaf {
+    padding-left: 160px;
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+}
+
+.paintinglinkdeath {
+    padding-left: 185px;
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+}
+
+.paintinglinkdr {
+    padding-left: 155px;
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+}
+
+#aboutsean {
+    padding-left: 200px;
+    width: 600px;
+    padding-bottom: 20px;
+    font-family: 'libre_baskervilleregular';
+    line-height: 1.25em;
+}
+
+.resumelink {
+    padding-left: 215px;
+    line-height: 1.5em;
+}
+
+.resumepdflink {
+    padding-left: 85px;
+}
+
+.resumehtmllink {
+    padding-left: 25px;
+}
+
+.resumedownload {
+    width: 350px;
+    padding-left: 65px;
+    padding-top: 25px;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.resumedownload a {
+    font-family: 'libre_baskervilleitalic';
+}
+
+#currentlink {
+    text-decoration: none;
+    color: black;
+}
+
+#resumedownloadcontrol img {
+    width: 165px;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+
+.resumeinfo {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    line-height: 1.5em;
+    padding-left: 50px;
+}
+
+.homeworldinfo,
+.homepaintinginfo {
+    width: 500px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    line-height: 1.5em;
+    padding-left: 10px;
+}
+
+.homeworldinfo img,
+.homepaintinginfo img {
+    padding-left: 90px;
+    padding-bottom: 20px;
+}
+
+.homepaintinginfo img {
+    padding-left: 55px;
+}
+
+.storylinkdindex {
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+    padding-left: 225px;
+}
+
+.storylinkdcindex {
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+    padding-left: 165px;
+}
+
+.storylinkdrindex {
+    font-family: 'libre_baskervilleitalic';
+    font-size: 20px;
+    padding-left: 190px;
+}
+
+.hpaintinginfoindex img {
+    width: 900px;
+    margin: 0 auto;
+    padding-left: 25px;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #82a182;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #82a182;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}

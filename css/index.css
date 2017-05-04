@@ -1,0 +1,1723 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*CSS Reset Ends*/
+
+@font-face {
+    font-family: 'libre_baskervilleregular';
+    src: url('../fonts/librebaskerville-regular-webfont.woff2') format('woff2'), url('../fonts/librebaskerville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'libre_baskervillebold';
+    src: url('../fonts/librebaskerville-bold-webfont.woff2') format('woff2'), url('../fonts/librebaskerville-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'libre_baskervilleitalic';
+    src: url('../fonts/librebaskerville-italic-webfont.woff2') format('woff2'), url('../fonts/librebaskerville-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'veteran_typewriterregular';
+    src: url('../fonts/veteran_typewriter-webfont.woff2') format('woff2'), url('../fonts/veteran_typewriter-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#mobilespacing {
+    display: none;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 'libre_baskervillebold';
+    padding-bottom: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'libre_baskervilleregular';
+    padding-bottom: 20px;
+}
+
+i {
+    font-family: 'libre_baskervilleitalic';
+}
+
+body {
+    background-color: #889471;
+    font-family: 'libre_baskervillebold';
+}
+
+header {
+    padding-bottom: 45px;
+    padding-top: 15px;
+}
+
+#breadcrumb {
+    font-family: 'libre_baskervilleregular';
+    float: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+#breadcrumb a {
+    font-family: 'libre_baskervilleitalic';
+}
+
+#logo {
+    float: left;
+    padding-bottom: 25px;
+    padding-right: 50px;
+}
+
+#name {
+    float: left;
+    padding-top: 35px;
+}
+
+#portname {
+    font-family: 'libre_baskervillebold';
+    font-size: 30px;
+}
+
+#tagline {
+    font-family: 'libre_baskervilleitalic';
+    padding-top: 90px;
+}
+
+#tag {
+    font-family: 'libre_baskervilleitalic';
+    font-size: 22px;
+}
+
+header #mainnav {
+    font-family: 'libre_baskervilleregular';
+    float: left;
+}
+
+#wrapper {
+    margin: 0 auto;
+    width: 960px;
+}
+
+#pageTitle {
+    font-size: 35px;
+    text-align: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+#mainnav {
+    background-color: #82a182;
+    border-radius: 50px;
+    border: 5px solid #435943;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*font-size: 18px;*/
+    font-size: 140%;
+    width: 93%;
+}
+
+#mainnav ul {
+    padding-left: 10px;
+}
+
+#mainnav ul li {
+    display: inline;
+}
+
+#mainnav a {
+    text-decoration: none;
+    color: black;
+}
+
+#mainnavleft {
+    border-right: 2px solid #435943;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#mainnavright {
+    border-left: 2px solid #435943;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#mainnavcenter {
+    border-right: 2px solid #435943;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#mainnavdp {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.libreFont {
+    font-family: 'libre_baskervilleregular';
+}
+
+.helFont {
+    font-family: 'Helvetica', sans-serif;
+}
+
+.twFont {
+    font-family: 'veteran_typewriterregular';
+}
+
+footer {
+    background-color: #5c6b52;
+    clear: both;
+}
+
+#footercontent {
+    margin: 0 auto;
+    width: 950px;
+}
+
+.footersection {
+    width: 130px;
+    font-family: 'libre_baskervilleregular';
+    padding: 15px;
+    display: inline;
+}
+
+#footercontent ul li {
+    display: inline;
+}
+
+.footersection h3 {
+    font-family: 'libre_baskervillebold';
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+#footercontent a {
+    text-decoration: none;
+    color: black;
+}
+
+#copyright {
+    padding-left: 75%;
+}
+
+#mainsideimg img {
+    display: none;
+}
+
+#sidebreadcrumb {
+    display: none;
+}
+
+#sidelogo {
+    display: none;
+}
+
+#sidename {
+    display: none;
+}
+
+#sideportname {
+    display: none;
+}
+
+#sidetag {
+    display: none;
+}
+
+#pullednav {
+    display: none;
+}
+
+#subsideportname {
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    padding-left: 15px;
+}
+
+#subsideportnamelong {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+
+#worksarea {
+    background-color: #b0bc98;
+    border-radius: 25px;
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    font-family: 'libre_baskervilleregular';
+}
+
+.homeworldinfo,
+.homepaintinginfo,
+.storyinfo,
+#storyinfolast,
+.worldinfo,
+.charinfo,
+.paintinginfo,
+.hpaintinginfo {
+    text-align: center;
+    width: 80%;
+    padding-left: 9.5%;
+}
+
+#aboutsean {
+    width: 80%;
+    padding-left: 9.5%;
+    line-height: 1.25em;
+}
+
+.homeworldinfo img,
+.homepaintinginfo img,
+.storyinfo img,
+#storyinfolast img,
+.worldinfo img,
+.charinfo img,
+.paintinginfo img,
+.hpaintinginfo img {
+    margin-bottom: 2%;
+    margin-top: 2%;
+    width: 75%;
+}
+
+.homeworldinfo a,
+.homepaintinginfo a,
+.storyinfo a,
+#storyinfolast a,
+.worldinfo a,
+.charinfo a .paintinginfo a,
+.hpaintinginfo a {
+    font-family: 'libre_baskervilleitalic';
+}
+
+.homeworldinfo .storylinkhome,
+.homepaintinginfo .paintinglink,
+.storyinfo .storysummary,
+#storyinfolast {
+    margin-top: 2%;
+}
+
+.hpaintinginfoindex img {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 25px;
+}
+
+.paintingdownload,
+.download,
+.resumedownload {
+    padding-left: 0px;
+    padding-top: 25px;
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 2%;
+}
+
+.designdownload{
+    padding-top: 15px;
+}
+
+.designpdflink,
+.lightboxlink,
+.designhtmllink,
+.htmllink,
+.paintinglink,
+.pnglink,
+.resumelink,
+.resumepdflink,
+.resumehtmllink {
+    margin-top: 2%;
+    font-family: 'libre_baskervilleitalic';
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.worldsummary,
+.charsummary,
+.storysummary {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'libre_baskervilleitalic';
+}
+
+#mobilelink{
+    display: none;
+}
+
+
+/* The navigation menu links */
+
+.closebtn {
+    display: none;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #82a182;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #82a182;
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+    display: block;
+}
+
+@media screen and (max-width: 1280px) {
+    h1 {
+        font-size: 24px;
+        font-family: 'libre_baskervillebold';
+        padding-bottom: 20px;
+    }
+    h2 {
+        font-size: 20px;
+        font-family: 'libre_baskervilleregular';
+        padding-bottom: 20px;
+    }
+    i {
+        font-family: 'libre_baskervilleitalic';
+    }
+    body {
+        background-color: #889471;
+        font-family: 'libre_baskervillebold';
+    }
+    header {
+        padding-bottom: 45px;
+        padding-top: 15px;
+    }
+    #breadcrumb {
+        font-family: 'libre_baskervilleregular';
+        float: left;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+    #breadcrumb a {
+        font-family: 'libre_baskervilleitalic';
+    }
+    #logo {
+        float: left;
+        padding-bottom: 25px;
+        padding-right: 50px;
+    }
+    #name {
+        float: left;
+        padding-top: 35px;
+    }
+    #portname {
+        font-family: 'libre_baskervillebold';
+        font-size: 35px;
+    }
+    #tagline {
+        font-family: 'libre_baskervilleitalic';
+        padding-top: 90px;
+    }
+    #tag {
+        font-family: 'libre_baskervilleitalic';
+        font-size: 22px;
+    }
+    header #mainnav {
+        font-family: 'libre_baskervilleregular';
+        float: left;
+    }
+    #wrapper {
+        margin: 0 auto;
+        width: 960px;
+    }
+    #mainnav {
+        background-color: #82a182;
+        border-radius: 50px;
+        border: 5px solid #435943;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        /*font-size: 18px;*/
+        font-size: 140%;
+        width: 93%;
+    }
+    #mainnav ul {
+        padding-left: 10px;
+    }
+    #mainnav ul li {
+        display: inline;
+    }
+    #mainnav a {
+        text-decoration: none;
+        color: black;
+    }
+    #mainnavleft {
+        border-right: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavright {
+        border-left: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavcenter {
+        border-right: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavdp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #htmlarea {
+        background-color: #b0bc98;
+        border-radius: 25px;
+        float: left;
+        width: 66%;
+        padding-left: 2.5%;
+        margin-bottom: 5%;
+    }
+    #htmlsubnav {
+        position: fixed;
+        top: 325px;
+        left: 70%;
+        background-color: #82a182;
+        border-radius: 25px;
+        border: 5px solid #435943;
+        float: right;
+        width: 13%;
+        padding-right: 2%;
+        padding-top: 1%;
+        padding-bottom: 0.5%;
+        margin: 0;
+        margin-bottom: 1%;
+    }
+    #htmlsubnav li {
+        padding-bottom: 9%;
+        padding-left: 6%;
+    }
+    #htmlsubnav li a {
+        font-family: 'libre_baskervilleitalic';
+    }
+    footer {
+        background-color: #5c6b52;
+        clear: both;
+    }
+    #footercontent {
+        margin: 0 auto;
+        width: 950px;
+    }
+    .footersection {
+        width: 130px;
+        font-family: 'libre_baskervilleregular';
+        padding: 15px;
+        display: inline;
+    }
+    #footercontent ul li {
+        display: inline;
+    }
+    .footersection h3 {
+        font-family: 'libre_baskervillebold';
+        padding-bottom: 10px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    #footercontent a {
+        text-decoration: none;
+        color: black;
+    }
+    #copyright {
+        padding-left: 75%;
+    }
+    #parttext {
+        width: 95%;
+        font-family: 'libre_baskervilleregular';
+    }
+    #partcontent {
+        margin: 20px auto;
+        line-height: 1.25em;
+    }
+    #parttitle {
+        font-size: 32px;
+        text-align: center;
+    }
+    #topLink {
+        padding-top: 10px;
+        font-family: 'libre_baskervilleitalic';
+        padding-bottom: 15px;
+        padding-left: 20px;
+        float: right;
+    }
+    #currentlink {
+        text-decoration: none;
+        color: black;
+    }
+    #mainsideimg img {
+        display: none;
+    }
+    #sidebreadcrumb {
+        display: none;
+    }
+    #sidelogo {
+        display: none;
+    }
+    #sidename {
+        display: none;
+    }
+    #sideportname {
+        display: none;
+    }
+    #sidetag {
+        display: none;
+    }
+    #pullednav {
+        display: none;
+    }
+    #partssideimg img {
+        display: none;
+    }
+    #storyname {
+        display: none;
+    }
+    #storytag {
+        display: none;
+    }
+    #partsside {
+        display: none;
+    }
+    /* The navigation menu links */
+    .closebtn {
+        display: none;
+    }
+    /* Dropdown Button */
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #82a182;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #82a182;
+    }
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 24px;
+        font-family: 'libre_baskervillebold';
+        padding-bottom: 20px;
+    }
+    h2 {
+        font-size: 20px;
+        font-family: 'libre_baskervilleregular';
+        padding-bottom: 20px;
+    }
+    i {
+        font-family: 'libre_baskervilleitalic';
+    }
+    body {
+        background-color: #889471;
+        font-family: 'libre_baskervillebold';
+    }
+    header {
+        padding-bottom: 45px;
+        padding-top: 15px;
+    }
+    #breadcrumb {
+        font-family: 'libre_baskervilleregular';
+        float: left;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+    #breadcrumb a {
+        font-family: 'libre_baskervilleitalic';
+    }
+    #logo {
+        float: left;
+        padding-bottom: 25px;
+        padding-right: 50px;
+    }
+    #name {
+        float: left;
+        font-size: 45px;
+        padding-top: 35px;
+    }
+    #portname {
+        font-family: 'libre_baskervillebold';
+    }
+    #tagline {
+        font-size: 22px;
+        font-family: 'libre_baskervilleitalic';
+        padding-top: 90px;
+    }
+    #tag {
+        font-family: 'libre_baskervilleitalic';
+    }
+    header #mainnav {
+        font-family: 'libre_baskervilleregular';
+        float: left;
+    }
+    #wrapper {
+        margin: 0 auto;
+        width: 960px;
+    }
+    #mainnav {
+        background-color: #82a182;
+        border-radius: 50px;
+        border: 5px solid #435943;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        /*font-size: 18px;*/
+        font-size: 140%;
+        width: 93%;
+    }
+    #mainnav ul {
+        padding-left: 10px;
+    }
+    #mainnav ul li {
+        display: inline;
+    }
+    #mainnav a {
+        text-decoration: none;
+        color: black;
+    }
+    #mainnavleft {
+        border-right: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavright {
+        border-left: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavcenter {
+        border-right: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavdp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #htmlarea {
+        background-color: #b0bc98;
+        border-radius: 25px;
+        float: left;
+        width: 66%;
+        padding-left: 2.5%;
+        margin-bottom: 5%;
+    }
+    #subnav li a {
+        font-family: 'libre_baskervilleitalic';
+    }
+    #htmlsubnav {
+        position: fixed;
+        top: 325px;
+        left: 75%;
+        background-color: #82a182;
+        border-radius: 25px;
+        border: 5px solid #435943;
+        float: right;
+        width: 17%;
+        padding-right: 2%;
+        padding-top: 1%;
+        padding-bottom: 0.5%;
+        margin: 0;
+        margin-bottom: 1%;
+    }
+    #htmlsubnav li {
+        padding-bottom: 9%;
+        padding-left: 6%;
+    }
+    #htmlsubnav li a {
+        font-family: 'libre_baskervilleitalic';
+    }
+    footer {
+        background-color: #5c6b52;
+        clear: both;
+    }
+    #footercontent {
+        margin: 0 auto;
+        width: 950px;
+    }
+    .footersection {
+        width: 130px;
+        font-family: 'libre_baskervilleregular';
+        padding: 15px;
+        display: inline;
+    }
+    #footercontent ul li {
+        display: inline;
+    }
+    .footersection h3 {
+        font-family: 'libre_baskervillebold';
+        padding-bottom: 10px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    #footercontent a {
+        text-decoration: none;
+        color: black;
+    }
+    #copyright {
+        padding-left: 75%;
+    }
+    #parttext {
+        width: 95%;
+        font-family: 'libre_baskervilleregular';
+    }
+    #partcontent {
+        margin: 20px auto;
+        line-height: 1.25em;
+    }
+    #parttitle {
+        font-size: 32px;
+        text-align: center;
+    }
+    #topLink {
+        padding-top: 10px;
+        font-family: 'libre_baskervilleitalic';
+        padding-bottom: 15px;
+        padding-left: 20px;
+        float: right;
+    }
+    #currentlink {
+        text-decoration: none;
+        color: black;
+    }
+    #mainsideimg img {
+        display: none;
+    }
+    #sidebreadcrumb {
+        display: none;
+    }
+    #sidelogo {
+        display: none;
+    }
+    #sidename {
+        display: none;
+    }
+    #sideportname {
+        display: none;
+    }
+    #sidetag {
+        display: none;
+    }
+    #pullednav {
+        display: none;
+    }
+    #partssideimg img {
+        display: none;
+    }
+    #storyname {
+        display: none;
+    }
+    #storytag {
+        display: none;
+    }
+    #partsside {
+        display: none;
+    }
+    /* The navigation menu links */
+    .closebtn {
+        display: none;
+    }
+    /* Dropdown Button */
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #82a182;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #82a182;
+    }
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    h1 {
+        font-size: 24px;
+        font-family: 'libre_baskervillebold';
+        padding-bottom: 20px;
+    }
+    h2 {
+        font-size: 20px;
+        font-family: 'libre_baskervilleregular';
+        padding-bottom: 20px;
+    }
+    i {
+        font-family: 'libre_baskervilleitalic';
+    }
+    body {
+        background-color: #889471;
+        font-family: 'libre_baskervillebold';
+    }
+    header {
+        padding-bottom: 45px;
+        padding-top: 15px;
+    }
+    #breadcrumb {
+        font-family: 'libre_baskervilleregular';
+        float: left;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+    }
+    #breadcrumb a {
+        font-family: 'libre_baskervilleitalic';
+    }
+    #logo {
+        float: left;
+        padding-bottom: 25px;
+        padding-right: 50px;
+    }
+    #name {
+        float: left;
+        padding-top: 35px;
+    }
+    #portname {
+        font-family: 'libre_baskervillebold';
+        font-size: 35px;
+    }
+    #tagline {
+        font-family: 'libre_baskervilleitalic';
+        padding-top: 90px;
+    }
+    #tag {
+        font-family: 'libre_baskervilleitalic';
+        font-size: 22px;
+    }
+    header #mainnav {
+        font-family: 'libre_baskervilleregular';
+        float: left;
+    }
+    #wrapper {
+        margin: 0 auto;
+        width: 960px;
+    }
+    #mainnav {
+        background-color: #82a182;
+        border-radius: 50px;
+        border: 5px solid #435943;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        /*font-size: 18px;*/
+        font-size: 140%;
+        width: 93%;
+    }
+    #mainnav ul {
+        padding-left: 10px;
+    }
+    #mainnav ul li {
+        display: inline;
+    }
+    #mainnav a {
+        text-decoration: none;
+        color: black;
+    }
+    #mainnavleft {
+        border-right: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavright {
+        border-left: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavcenter {
+        border-right: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavdp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #subnav li a {
+        font-family: 'libre_baskervilleitalic';
+    }
+    footer {
+        background-color: #5c6b52;
+        clear: both;
+    }
+    #footercontent {
+        margin: 0 auto;
+        width: 950px;
+    }
+    .footersection {
+        width: 130px;
+        font-family: 'libre_baskervilleregular';
+        padding: 15px;
+        display: inline;
+    }
+    #footercontent ul li {
+        display: inline;
+    }
+    .footersection h3 {
+        font-family: 'libre_baskervillebold';
+        padding-bottom: 10px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    #footercontent a {
+        text-decoration: none;
+        color: black;
+    }
+    #copyright {
+        padding-left: 75%;
+    }
+    #mainsideimg img {
+        display: none;
+    }
+    #sidebreadcrumb {
+        display: none;
+    }
+    #sidelogo {
+        display: none;
+    }
+    #sidename {
+        display: none;
+    }
+    #sideportname {
+        display: none;
+    }
+    #sidetag {
+        display: none;
+    }
+    #pullednav {
+        display: none;
+    }
+    #partssideimg img {
+        display: none;
+    }
+    #storyname {
+        display: none;
+    }
+    #storytag {
+        display: none;
+    }
+    #partsside {
+        display: none;
+    }
+    /* The navigation menu links */
+    .closebtn {
+        display: none;
+    }
+    #worksarea {
+        background-color: #b0bc98;
+        border-radius: 25px;
+        float: left;
+        width: 80%;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        margin-top: 75px;
+    }
+    #pageTitle {
+        font-size: 35px;
+        text-align: center;
+        padding-top: 2.5%;
+    }
+    .hpaintinginfoindex img {
+        width: 95%;
+        margin: 0 auto;
+        padding-left: 25px;
+    }
+    .paintingdownload {
+        padding-left: 0px;
+        padding-top: 25px;
+        text-align: center;
+        line-height: 1.5em;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #82a182;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #82a182;
+    }
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 24px;
+        font-family: 'libre_baskervillebold';
+        padding-bottom: 20px;
+    }
+    h2 {
+        font-size: 20px;
+        font-family: 'libre_baskervilleregular';
+        padding-bottom: 20px;
+    }
+    i {
+        font-family: 'libre_baskervilleitalic';
+    }
+    body {
+        background-color: #889471;
+        font-family: 'libre_baskervillebold';
+    }
+    header {
+        padding-bottom: 45px;
+        padding-top: 15px;
+    }
+    #breadcrumb {
+        font-family: 'libre_baskervilleregular';
+        float: left;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+    #breadcrumb a {
+        font-family: 'libre_baskervilleitalic';
+    }
+    #logo {
+        float: left;
+        padding-bottom: 25px;
+        padding-right: 50px;
+    }
+    #name {
+        float: left;
+        font-size: 45px;
+        padding-top: 35px;
+    }
+    #portname {
+        font-family: 'libre_baskervillebold';
+    }
+    #tagline {
+        font-size: 22px;
+        font-family: 'libre_baskervilleitalic';
+        padding-top: 90px;
+    }
+    #tag {
+        font-family: 'libre_baskervilleitalic';
+    }
+    header #mainnav {
+        font-family: 'libre_baskervilleregular';
+        float: left;
+    }
+    #wrapper {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #mainnav {
+        background-color: #82a182;
+        border-radius: 50px;
+        border: 5px solid #435943;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 125%;
+    }
+    #mainnav ul {
+        padding-left: 10px;
+    }
+    #mainnav ul li {
+        display: inline;
+    }
+    #mainnav a {
+        text-decoration: none;
+        color: black;
+    }
+    #mainnavleft {
+        border-right: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavright {
+        border-left: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavcenter {
+        border-right: 2px solid #435943;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #mainnavdp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #subnav li a {
+        font-family: 'libre_baskervilleitalic';
+    }
+    footer {
+        background-color: #5c6b52;
+        clear: both;
+    }
+    #footercontent {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .footersection {
+        width: 130px;
+        font-family: 'libre_baskervilleregular';
+        padding: 15px;
+        display: inline;
+    }
+    #footercontent ul li {
+        display: inline;
+    }
+    .footersection h3 {
+        font-family: 'libre_baskervillebold';
+        padding-bottom: 10px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    #footercontent a {
+        text-decoration: none;
+        color: black;
+    }
+    #copyright {
+        padding-left: 75%;
+    }
+    #parttext {
+        width: 95%;
+        font-family: 'libre_baskervilleregular';
+    }
+    #partcontent {
+        margin: 20px auto;
+        line-height: 1.25em;
+    }
+    #parttitle {
+        font-size: 32px;
+        text-align: center;
+    }
+    #topLink {
+        padding-top: 10px;
+        font-family: 'libre_baskervilleitalic';
+        padding-bottom: 15px;
+        padding-left: 20px;
+        float: right;
+    }
+    #currentlink {
+        text-decoration: none;
+        color: black;
+    }
+    #mainsideimg img {
+        display: none;
+    }
+    #sidebreadcrumb {
+        display: none;
+    }
+    #sidelogo {
+        display: none;
+    }
+    #sidename {
+        display: none;
+    }
+    #sideportname {
+        display: none;
+    }
+    #sidetag {
+        display: none;
+    }
+    #pullednav {
+        display: none;
+    }
+    #partssideimg img {
+        display: none;
+    }
+    #storyname {
+        display: none;
+    }
+    #storytag {
+        display: none;
+    }
+    #partsside {
+        display: none;
+    }
+    #worksarea {
+        background-color: #b0bc98;
+        border-radius: 25px;
+        float: left;
+        width: 90%;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+    #pageTitle {
+        font-size: 35px;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .hpaintinginfoindex img {
+        width: 95%;
+        margin: 0 auto;
+        padding-left: 25px;
+    }
+    .paintingdownload {
+        padding-left: 0px;
+        padding-top: 25px;
+        text-align: center;
+        line-height: 1.5em;
+    }
+    /* The navigation menu links */
+    .closebtn {
+        display: none;
+    }
+    /* Dropdown Button */
+    .dropbtn {
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #82a182;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #82a182;
+    }
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    header {
+        display: none;
+    }
+    /*#mobilespacing {
+        display: block;
+    }*/
+    .homeworldinfo p,
+    .homepaintinginfo p,
+    .storyinfo p,
+    #storyinfolast p,
+    .worldinfo p,
+    .charinfo p,
+    .paintinginfo p,
+    .hpaintinginfo p {
+        font-size: 12px;
+    }
+    .homeworldinfo a,
+    .homepaintinginfo a,
+    .storyinfo a,
+    #storyinfolast a,
+    .worldinfo a,
+    .charinfo a,
+    .paintinginfo a,
+    .hpaintinginfo a {
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+    #aboutsean{
+        font-size: 12px;
+    }
+    #worksarea {
+        width: 85%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    #mainsideimg img {
+        width: 8%;
+        display: block;
+        position: fixed;
+        top: 5%;
+    }
+    #pullednav {
+        padding-top: 2%;
+        display: block;
+    }
+    #pullednav a {
+        text-decoration: none;
+        color: black;
+        padding-left: 15px;
+        font-size: 20px;
+    }
+    #pullednav ul li {
+        padding-top: 20px;
+    }
+    #sidebreadcrumb {
+        font-family: 'libre_baskervilleregular';
+        font-size: 12px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        display: block;
+    }
+    #sidebreadcrumb a {
+        font-size: 12px;
+        color: black;
+        font-family: 'libre_baskervilleitalic';
+        display: inline;
+    }
+    #sidelogo {
+        float: left;
+        display: block;
+        width: 35%;
+        padding-right: 2%;
+    }
+    #sidelogo img {
+        width: 100%;
+    }
+    #sidename {
+        float: left;
+        font-size: 26px;
+        padding-top: 35px;
+        display: block;
+    }
+    #sideportname {
+        font-family: 'libre_baskervillebold';
+        display: block;
+        font-size: 26px;
+    }
+    #sidetag {
+        font-size: 16px;
+        font-family: 'libre_baskervilleitalic';
+        padding-top: 90px;
+        padding-left: 30px;
+        display: block;
+    }
+    .designpdflink,
+    .resumepdflink {
+        display: none;
+    }
+    
+    #mobilelink{
+        display: block;
+    }
+    
+    #computerlink{
+        display: none;
+    }
+    
+    /* The side navigation menu */
+    .mainsidenav {
+        height: 75%;
+        /* 100% Full-height */
+        width: 0;
+        /* 0 width - change this with JavaScript */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Stay on top */
+        top: 0%;
+        left: 0;
+        background-color: #82a182;
+        ;
+        /* Black*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* Place content 60px from the top */
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
+        border-radius: 0px;
+        border: 0px solid #435943;
+    }
+    /* The navigation menu links */
+    .closebtn {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #111111;
+        display: block;
+        transition: 0.3s
+    }
+    /* Position and style the close button (top right corner) */
+    .mainsidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+}

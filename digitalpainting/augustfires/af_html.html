@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>August Fires Cover - Sean Francis</title>
+    <link rel="stylesheet" href="../../css/html.css">
+    <link rel="stylesheet" href="../../css/lightbox.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="logo">
+                <a href="../../index.html"><img src="../../img/port_logo_165.png" alt="Logo"></a>
+            </div>
+            <div id="name">
+                <h1 id="portname">Sean Francis</h1>
+            </div>
+            <div id="tagline">
+                <h2 id="tag">&quot;I've Written Your Story&quot;</h2>
+            </div>
+
+            <div id="mainnav">
+                <ul>
+                    <li id="mainnavleft"><a href="../../written_works/index.html">Written Works</a></li>
+                    <li id="mainnavcenter"><a href="../../world_char_design/index.html">World/Character Design</a></li>
+                    <li id="mainnavdp"><a href="../index.html">Digital Paintings</a></li>
+                    <li id="mainnavright"><a href="../../about/index.html">About</a></li>
+                </ul>
+            </div>
+
+            <div id="breadcrumb"><a href="../../index.html">Home</a> -> <a href="../index.html">Digital Paintings</a> -> <a href="index.html">August Fires Cover</a> -> <a href="af_html.html">August Fires Cover (HTML)</a></div>
+        </header>
+
+        <div id="sidemainnav" class="mainsidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMainNav()">&times;</a>
+
+            <div id="sidelogo">
+                <a href="../../index.html"><img src="../../img/port_logo_165.png" alt="Logo"></a>
+            </div>
+            <div id="sidename">
+                <h1 id="sideportname">Sean Francis</h1>
+            </div>
+            <div id="sidetagline">
+                <h2 id="sidetag">&quot;I've Written Your Story.&quot;</h2>
+            </div>
+
+            <div id="sidebreadcrumb"><a href="../../index.html">Home</a> -> <a href="../index.html">Digital Paintings</a> -> <a href="index.html">August Fires Cover</a> -> <a href="af_html.html">August Fires Cover (HTML)</a></div>
+
+            <div id="pullednav">
+                <ul>
+                    <li><a href="../../written_works/index.html">Written Works</a></li>
+                    <li><a href="../../world_char_design/index.html">World/Character Design</a></li>
+                    <li><a href="../index.html">Digital Paintings</a></li>
+                    <li><a href="../../about/index.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Use any element to open the sidenav -->
+        <span id="mainsideimg" onclick="openMainNav()"><img src="../../img/icon_pullout_mainnav.png"></span>
+
+        <div id="htmlworksarea">
+            <h1 id="pageTitle">August Fires</h1>
+
+            <div class="hpaintinginfoindex">
+                <img src="../../img/af_cover_ucfinal.png" alt="August Fires Cover Image" class="horizontalimghtml">
+
+                <p class="paintingdownload">Download <a href="../../img/af_cover_ucfinal.png" class="pnglink" download>PNG</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footercontent">
+            <ul>
+                <li>
+                    <div class="footersection">
+                        <h3><a href="../../written_works/index.html">Written Works</a></h3>
+                        <ul>
+                            <li><a href="../../written_works/augustfires/index.html">August Fires</a> //</li>
+                            <li><a href="../../written_works/death/index.html">Death</a> //</li>
+                            <li><a href="../../written_works/dimensional_chain/index.html">Dimensional Chain</a> //</li>
+                            <li><a href="../../written_works/dragon_raid/index.html">Dragon Raid</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footersection">
+                        <h3><a href="../../world_char_design/index.html">World/Character Design</a></h3>
+                        <ul>
+                            <li><a href="../../world_char_design/huntedworld/index.html">The World of Hunted</a> //</li>
+                            <li><a href="../../world_char_design/davidparker/index.html">David Parker (Character)</a> //</li>
+                            <li><a href="../../world_char_design/leahkaitlyn/index.html">Leah Kaitlyn (Character)</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footersection">
+                        <h3><a href="../index.html">Digital Paintings</a></h3>
+                        <ul>
+                            <li><a href="index.html">August Fires</a> //</li>
+                            <li><a href="../death/index.html">Death</a> //</li>
+                            <li><a href="../dimensionalchain/index.html">Dimensional Chain</a> //</li>
+                            <li><a href="../dragonraid/index.html">Dragon Raid</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footersection">
+                        <h3><a href="../../about/index.html">About</a></h3>
+                        <ul>
+                            <li><a href="../../about/index.html">About Sean</a> //</li>
+                            <li><a href="../../about/resume/index.html">Resume</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="copyright">
+            <small>Sean Francis &copy; 2017</small>
+        </div>
+    </footer>
+
+    <script src="../../js/lightbox-plus-jquery.js"></script>
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openMainNav() {
+            document.getElementById("sidemainnav").style.width = "95%";
+            document.getElementById("sidemainnav").style.borderRadius = "50px";
+            document.getElementById("sidemainnav").style.borderWidth = "5px";
+            document.getElementById("mainsideimg").style.display = "none";
+
+            document.getElementById("sidepartsnav").style.width = "0";
+            document.getElementById("sidepartsnav").style.borderRadius = "0";
+            document.getElementById("sidepartsnav").style.borderWidth = "0";
+            document.getElementById("partssideimg").style.display = "block";
+
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeMainNav() {
+            document.getElementById("sidemainnav").style.width = "0";
+            document.getElementById("sidemainnav").style.borderRadius = "0";
+            document.getElementById("sidemainnav").style.borderWidth = "0";
+            document.getElementById("mainsideimg").style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>

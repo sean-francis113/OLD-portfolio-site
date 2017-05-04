@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	border-top:#295590 20px solid;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Reset Ends*/
+
+#wrapper {
+	width:870px;
+	margin-left:90px;
+	/*background-color:#668E6A;*/	
+}
+
+header{
+	width:870px;
+	/*background-color:#29642B;*/
+	margin-top:25px;	
+}
+
+article {
+	width:700px;
+	margin-left:80px;
+	/*background-color:#09B100;*/	
+}
+
+footer{
+	width:790px;
+	margin-left:80px;
+	/*background-color:#007732;*/
+	margin-top:50px;
+	border-top:#000000 2px solid;
+	padding-top:5px;	
+}
+
+.critique {
+	width:540px;
+	margin-left:160px;
+	/*background-color:#87D092;*/	
+}
+
+h1 {
+	font-size:40px;
+	color:#295590;
+}
+
+h2 {
+	font-size:24px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	margin-top:28px;
+	margin-bottom:23px;	
+}
+
+p {
+	line-height:1.3em;	
+}
+
+p.footer {
+	font-size:9px;	
+}
+
+a:link {
+	color:#295590;
+}
+
+a:visited {
+	color:#891315;
+}
+
+a:hover {
+	color:#D9A000;
+}
+
+a:active {
+	color:#B09B00;
+}

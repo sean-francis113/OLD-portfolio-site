@@ -1,0 +1,1189 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ 
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ 
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+     display: block;
+ }
+ 
+ body {
+     line-height: 1;
+ }
+ 
+ ol,
+ ul {
+     list-style: none;
+ }
+ 
+ blockquote,
+ q {
+     quotes: none;
+ }
+ 
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+     content: '';
+     content: none;
+ }
+ 
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ /*CSS Reset Ends*/
+ 
+ @font-face {
+     font-family: 'libre_baskervilleregular';
+     src: url('../fonts/librebaskerville-regular-webfont.woff2') format('woff2'), url('../fonts/librebaskerville-regular-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'libre_baskervillebold';
+     src: url('../fonts/librebaskerville-bold-webfont.woff2') format('woff2'), url('../fonts/librebaskerville-bold-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'libre_baskervilleitalic';
+     src: url('../fonts/librebaskerville-italic-webfont.woff2') format('woff2'), url('../fonts/librebaskerville-italic-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+ @font-face {
+     font-family: 'veteran_typewriterregular';
+     src: url('../fonts/veteran_typewriter-webfont.woff2') format('woff2'), url('../fonts/veteran_typewriter-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+ }
+
+#empty{
+    display: none;
+}
+ 
+ h1 {
+     font-size: 24px;
+     font-family: 'libre_baskervillebold';
+     padding-bottom: 20px;
+ }
+ 
+ h2 {
+     font-size: 20px;
+     font-family: 'libre_baskervilleregular';
+     padding-bottom: 20px;
+ }
+ 
+ i {
+     font-family: 'libre_baskervilleitalic';
+ }
+ 
+ body {
+     background-color: #889471;
+     font-family: 'libre_baskervillebold';
+ }
+ 
+ header {
+     padding-bottom: 45px;
+     padding-top: 15px;
+ }
+ 
+ #breadcrumb {
+     font-family: 'libre_baskervilleregular';
+     float: left;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     padding-left: 25px;
+ }
+ 
+ #breadcrumb a {
+     font-family: 'libre_baskervilleitalic';
+ }
+ 
+ #logo {
+     float: left;
+     padding-bottom: 25px;
+     padding-right: 50px;
+ }
+ 
+ #name {
+     float: left;
+     font-size: 45px;
+     padding-top: 35px;
+ }
+ 
+ #portname {
+     font-family: 'libre_baskervillebold';
+ }
+ 
+ #tagline {
+     font-size: 22px;
+     font-family: 'libre_baskervilleitalic';
+     padding-top: 90px;
+ }
+ 
+ #tag {
+     font-family: 'libre_baskervilleitalic';
+ }
+ 
+ header #mainnav {
+     font-family: 'libre_baskervilleregular';
+     float: left;
+ }
+ 
+ #wrapper {
+     margin: 0 auto;
+     width: 960px;
+ }
+ 
+ #mainnav {
+     background-color: #82a182;
+     border-radius: 50px;
+     border: 5px solid #435943;
+     padding-top: 15px;
+     padding-bottom: 15px;
+     padding-left: 15px;
+     padding-right: 15px;
+     /*font-size: 18px;*/
+     font-size: 140%;
+     width: 93%;
+ }
+ 
+ #mainnav ul {
+     padding-left: 10px;
+ }
+ 
+ #mainnav ul li {
+     display: inline;
+ }
+ 
+ #mainnav a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ #mainnavleft {
+     border-right: 2px solid #435943;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+ 
+ #mainnavright {
+     border-left: 2px solid #435943;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+ 
+ #mainnavcenter {
+     border-right: 2px solid #435943;
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+ 
+ #mainnavdp {
+     padding-left: 15px;
+     padding-right: 15px;
+ }
+ 
+ #pdfarea {
+     background-color: #b0bc98;
+     border-radius: 25px;
+     float: left;
+     width: 66%;
+     padding-left: 2.5%;
+     margin-bottom: 5%;
+     padding-bottom: 50px;
+ }
+ 
+ #subnav {
+     background-color: #82a182;
+     border-radius: 25px;
+     border: 5px solid #435943;
+     float: right;
+     width: 22%;
+     padding-right: 2%;
+     padding-top: 1%;
+     padding-bottom: 0.5%;
+     margin: 0;
+     margin-bottom: 1%;
+ }
+
+
+ 
+ #subnav li a {
+     font-family: 'libre_baskervilleitalic';
+ }
+ 
+ #controlpanel {
+     background-color: #82a182;
+     border-radius: 25px;
+     border: 5px solid #435943;
+     float: right;
+     width: 21%;
+     padding-right: 2.5%;
+     padding-top: 2%;
+     margin-bottom: 5%;
+ }
+ 
+ #displaycontrol {
+     text-align: center;
+     padding-left: 20px;
+ }
+ 
+ .libreFont {
+     font-family: 'libre_baskervilleregular', sans-serif;
+ }
+ 
+ .helFont {
+     font-family: 'Helvetica', sans-serif;
+ }
+ 
+ .twFont {
+     font-family: 'veteran_typewriterregular', sans-serif;
+ }
+ 
+ footer {
+     background-color: #5c6b52;
+     clear: both;
+ }
+ 
+ #footercontent {
+     margin: 0 auto;
+     width: 950px;
+ }
+ 
+ .footersection {
+     width: 130px;
+     font-family: 'libre_baskervilleregular';
+     padding: 15px;
+     display: inline;
+ }
+ 
+ #footercontent ul li {
+     display: inline;
+ }
+ 
+ .footersection h3 {
+     font-family: 'libre_baskervillebold';
+     padding-bottom: 10px;
+ }
+ 
+ #fontcontrol,
+ #downloadcontrol,
+ #presentationcontrol {
+     padding-left: 10px;
+ }
+ 
+ #fontcontrol img {
+     width: 88%;
+ }
+ 
+ #downloadcontrol img {
+     width: 88%;
+ }
+ 
+ #presentationcontrol img {
+     width: 88%;
+     text-align: center;
+ }
+ 
+ #previous,
+     #next {
+         width: 6%;
+         padding-bottom: 50%;
+     }
+ 
+     #next {
+         padding-left: 30px;
+     }
+ 
+ #pdfview {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 60%;
+    border: 1px solid black;
+}
+
+#pdfarea {
+     background-color: #b0bc98;
+     border-radius: 25px;
+     float: left;
+     width: 65%;
+     margin-bottom: 5%;
+     padding-bottom: 50px;
+ }
+ 
+ #prevclear,
+ #nextclear {
+     width: 18%;
+ }
+ 
+ #page_display {
+     width: 34.5%;
+     background-color: #b4cdb4;
+     border-radius: 15px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 15px;
+     padding-right: 15px;
+     font-size: 20px;
+     margin-left: 20%;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+ 
+ h3 {
+     font-size: 16px;
+ }
+ 
+ #clear_text,
+ #clear_num {
+     padding-bottom: 10px;
+     font-size: 100%;
+ }
+ 
+ #footercontent a {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ #copyright {
+     padding-left: 78%;
+ }
+ 
+ #currentlink {
+     text-decoration: none;
+     color: black;
+ }
+ 
+ #mainsideimg img {
+     display: none;
+ }
+ 
+ #sidebreadcrumb {
+     display: none;
+ }
+ 
+ #sidelogo {
+     display: none;
+ }
+ 
+ #sidename {
+     display: none;
+ }
+ 
+ #sideportname {
+     display: none;
+ }
+ 
+ #sidetag {
+     display: none;
+ }
+ 
+ #pullednav {
+     display: none;
+ }
+ 
+ #partssideimg img {
+     display: none;
+ }
+ 
+ #storyname {
+     display: none;
+ }
+ 
+ #storytag {
+     display: none;
+ }
+ 
+ #substoryname {
+     font-size: 14px;
+     text-align: center;
+     display: block;
+     padding-left: 15px;
+ }
+ 
+ #subsideportname {
+     font-size: 24px;
+     text-align: center;
+     display: block;
+     padding-left: 15px;
+ }
+ 
+ #subsideportnamelong {
+     font-size: 20px;
+     text-align: center;
+     display: block;
+ }
+ 
+ #substorytag {
+     font-size: 14px;
+     text-align: center;
+     font-family: 'libre_baskervilleitalic';
+     display: block;
+     padding-left: 15px;
+ }
+ 
+ #partsside {
+     display: none;
+ }
+ 
+ #sidecontrolnav {
+     display: none;
+ }
+ 
+ #worldsidecontrolnav {
+     display: none;
+ }
+ 
+ #controlsideimg img {
+     display: none;
+ }
+ 
+ #worldcontrolsideimg img {
+     display: none;
+ }
+ 
+ #partprev {
+     float: right;
+     padding-top: 100px;
+ }
+ 
+ #partnext {
+     float: right;
+     padding-top: 15px;
+     padding-bottom: 10px;
+     padding-left: 50px;
+ }
+ /* Dropdown Button */
+ 
+ .dropbtn {
+     color: white;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+ }
+ /* The container <div> - needed to position the dropdown content */
+ 
+ .dropdown {
+     position: relative;
+     display: inline-block;
+ }
+ /* Dropdown Content (Hidden by Default) */
+ 
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #82a182;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+ }
+ /* Links inside the dropdown */
+ 
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     border: 2px solid #435943;
+ }
+ /* Change color of dropdown links on hover */
+ 
+ .dropdown-content a:hover {
+     background-color: #82a182;
+ }
+ /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+ 
+ .show {
+     display: block;
+ }
+ 
+ .closebtn {
+     display: none;
+ }
+ 
+ @media screen and (max-width: 1200px) {
+     #wrapper {
+         width: 80%;
+     }
+     #mainnav {
+         font-size: 135%;
+     }
+     #breadcrumb {
+         font-size: 95%;
+     }
+     #clear_text,
+     #clear_num {
+         font-size: 95%;
+     }
+ }
+ 
+ @media screen and (max-width: 1180px) {
+     #mainnav {
+         font-size: 120%;
+     }
+     #breadcrumb {
+         font-size: 90%;
+     }
+     #clear_text,
+     #clear_num {
+         font-size: 90%;
+     }
+ }
+ 
+ @media screen and (max-width: 1050px) {
+     #mainnav {
+         font-size: 110%;
+     }
+     #breadcrumb {
+         font-size: 85%;
+     }
+     #clear_text,
+     #clear_num {
+         font-size: 85%;
+     }
+ }
+ 
+ @media screen and (max-width: 970px) {
+     #mainnav {
+         font-size: 100%;
+     }
+     #breadcrumb {
+         font-size: 80%;
+     }
+     #clear_text,
+     #clear_num {
+         font-size: 80%;
+     }
+ }
+ 
+ @media screen and (max-width: 900px) {
+     #mainnav {
+         font-size: 95%;
+     }
+ }
+ 
+ @media screen and (max-width: 870px) {
+     #wrapper {
+         width: 100%
+     }
+     #subnav {
+         display: none;
+     }
+     #controlpanel {
+         display: none;
+     }
+     header {
+         display: none;
+     }
+     #htmlarea {
+         width: 78%;
+         margin-left: 9%;
+         margin-top: 5%;
+     }
+     #htmlsubnav {
+         display: none;
+     }
+     footer {
+         background-color: #5c6b52;
+         clear: both;
+         padding-bottom: 1%;
+     }
+     #footercontent {
+         margin: 0 auto;
+         width: 100%;
+     }
+     .footersection {
+         width: 130px;
+         font-family: 'libre_baskervilleregular';
+         padding: 15px;
+         display: inline;
+     }
+     #footercontent ul li {
+         display: inline;
+     }
+     .footersection h3 {
+         font-family: 'libre_baskervillebold';
+         padding-top: 10px;
+         padding-bottom: 20px;
+     }
+     h3 {
+         font-size: 16px;
+     }
+     #footercontent a {
+         text-decoration: none;
+         color: black;
+     }
+     #copyright {
+         padding-left: 75%;
+         padding-top: 10.5%;
+         padding-bottom: 1.25%;
+     }
+     #pdfview {
+         width: 90%;
+     }
+     #previous,
+     #next {
+         width: 10%;
+         padding-top: 50%;
+     }
+ 
+     #next {
+         padding-left: 0px;
+     }
+     #page_display {
+         margin-left: 35%;
+     }
+     #mainsideimg img {
+         width: 8%;
+         display: block;
+         position: fixed;
+         top: 5%;
+     }
+     #pullednav {
+         padding-top: 2%;
+         display: block;
+     }
+     #pullednav a {
+         text-decoration: none;
+         color: black;
+         padding-left: 15px;
+         font-size: 24px;
+     }
+     #pullednav ul li {
+         padding-top: 20px;
+     }
+     #sidebreadcrumb {
+         font-family: 'libre_baskervilleregular';
+         font-size: 16px;
+         padding-top: 50px;
+         padding-bottom: 30px;
+         padding-left: 15px;
+         display: block;
+     }
+     #sidebreadcrumb a {
+         font-size: 12px;
+         color: black;
+         font-family: 'libre_baskervilleitalic';
+         display: inline;
+     }
+     #sidelogo {
+         float: left;
+         padding-right: 20px;
+         display: block;
+     }
+     #sidename {
+         float: left;
+         font-size: 45px;
+         padding-top: 20px;
+         display: block;
+     }
+     #sideportname {
+         font-family: 'libre_baskervillebold';
+         display: block;
+         font-size: 30px;
+     }
+     #sidestoryname {
+         font-family: 'libre_baskervillebold';
+         display: block;
+         font-size: 22px;
+     }
+     #sidetag {
+         font-size: 16px;
+         font-family: 'libre_baskervilleitalic';
+         padding-top: 90px;
+         padding-left: 30px;
+         display: block;
+     }
+     #partssideimg img {
+         width: 8%;
+         display: block;
+         position: fixed;
+         top: 5%;
+         left: 92%;
+     }
+     #sidepartsnav {
+         float: right;
+         display: block;
+     }
+     #storyname {
+         font-size: 24px;
+         text-align: center;
+         display: block;
+     }
+     #storytag {
+         font-size: 20px;
+         text-align: center;
+         font-family: 'libre_baskervilleitalic';
+         display: block;
+     }
+     #partsside {
+         font-family: 'libre_baskervilleitalic';
+         padding-left: 15px;
+         display: block;
+     }
+     #partsside ul li {
+         padding-bottom: 10px;
+     }
+     #partsside a {
+         font-size: 14px;
+     }
+     #topLinkSide {
+         padding-top: 25px;
+         font-family: 'libre_baskervilleitalic';
+         padding-bottom: 15px;
+         padding-right: 15px;
+         float: right;
+         display: block;
+     }
+     #controlsideimg img {
+         width: 8%;
+         display: block;
+         position: fixed;
+         top: 57%;
+         left: 92%;
+     }
+     #worldcontrolsideimg img {
+         width: 8%;
+         display: block;
+         position: fixed;
+         top: 5%;
+         left: 92%;
+     }
+     #sidecontrolnav {
+         display: block;
+         float: right;
+     }
+     #worldsidecontrolnav {
+         display: block;
+         float: right;
+     }
+     #sidefontcontrol,
+     #sidedownloadcontrol,
+     #sidepresentationcontrol {
+         padding-left: 10px;
+     }
+     #sideresumedownloadcontrol {
+         padding-left: 25px;
+     }
+     #sidefontcontrol img {
+         width: 225px;
+     }
+     #sidedownloadcontrol img {
+         width: 225px;
+     }
+     #sidepresentationcontrol img {
+         width: 225px;
+         text-align: center;
+     }
+     #sideresumedownloadcontrol img {
+         width: 225px;
+         text-align: center;
+     }
+     #sideprevious,
+     #sidenext {
+         width: 40px;
+         padding-bottom: 300px;
+     }
+     #sidenext {
+         padding-left: 30px;
+     }
+     #sideprevclear,
+     #sidenextclear {
+         width: 40px;
+     }
+     #sideprevclear {
+         padding-left: 50px;
+     }
+     #sideclear_text,
+     #sideclear_num {
+         padding-bottom: 10px;
+         font-size: 18px;
+     }
+     #sidepartprev {
+         float: right;
+         padding-top: 110px;
+     }
+     #sidepartnext {
+         float: right;
+         padding-top: 15px;
+         padding-bottom: 10px;
+         padding-left: 50px;
+     }
+     
+     #page_display {
+     width: 34.5%;
+     background-color: #b4cdb4;
+     border-radius: 15px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 15px;
+     padding-right: 15px;
+     font-size: 14px;
+     margin-left: 5%;
+     margin-bottom: 20px;
+     text-align: center;
+ }
+     /* The navigation menu links */
+     .closebtn {
+         padding: 8px 8px 8px 32px;
+         text-decoration: none;
+         font-size: 25px;
+         color: #111111;
+         display: block;
+         transition: 0.3s
+     }
+     /* The side navigation menu */
+     .partssidenav {
+         height: 70%;
+         /* 100% Full-height */
+         width: 0;
+         /* 0 width - change this with JavaScript */
+         position: fixed;
+         /* Stay in place */
+         z-index: 1;
+         /* Stay on top */
+         top: 0%;
+         left: 5%;
+         background-color: #82a182;
+         ;
+         /* Black*/
+         overflow-x: hidden;
+         /* Disable horizontal scroll */
+         padding-top: 30px;
+         /* Place content 60px from the top */
+         transition: 0.5s;
+         /* 0.5 second transition effect to slide in the sidenav */
+         border-radius: 0px;
+         border: 0px solid #435943;
+     }
+     /* Position and style the close button (top right corner) */
+     .partssidenav .closebtn {
+         position: absolute;
+         top: 0;
+         font-size: 36px;
+     }
+     /* The side navigation menu */
+     .designpartssidenav {
+         height: 40%;
+         /* 100% Full-height */
+         width: 0;
+         /* 0 width - change this with JavaScript */
+         position: fixed;
+         /* Stay in place */
+         z-index: 1;
+         /* Stay on top */
+         top: 0%;
+         left: 5%;
+         background-color: #82a182;
+         ;
+         /* Black*/
+         overflow-x: hidden;
+         /* Disable horizontal scroll */
+         padding-top: 30px;
+         /* Place content 60px from the top */
+         transition: 0.5s;
+         /* 0.5 second transition effect to slide in the sidenav */
+         border-radius: 0px;
+         border: 0px solid #435943;
+     }
+     /* Position and style the close button (top right corner) */
+     .designpartssidenav .closebtn {
+         position: absolute;
+         top: 0;
+         font-size: 36px;
+     }
+     /* The side navigation menu */
+     .controlsidenav {
+         height: 60%;
+         /* 100% Full-height */
+         width: 0;
+         /* 0 width - change this with JavaScript */
+         position: fixed;
+         /* Stay in place */
+         z-index: 1;
+         /* Stay on top */
+         top: 30%;
+         left: 5%;
+         background-color: #82a182;
+         ;
+         /* Black*/
+         overflow-x: hidden;
+         /* Disable horizontal scroll */
+         padding-top: 60px;
+         /* Place content 60px from the top */
+         transition: 0.5s;
+         /* 0.5 second transition effect to slide in the sidenav */
+         border-radius: 0px;
+         border: 0px solid #435943;
+     }
+     /* Position and style the close button (top right corner) */
+     .controlsidenav .closebtn {
+         position: absolute;
+         top: 0;
+         font-size: 36px;
+     }
+     /* The side navigation menu */
+     .worldcontrolsidenav {
+         height: 70%;
+         /* 100% Full-height */
+         width: 0;
+         /* 0 width - change this with JavaScript */
+         position: fixed;
+         /* Stay in place */
+         z-index: 1;
+         /* Stay on top */
+         top: 0%;
+         left: 5%;
+         background-color: #82a182;
+         ;
+         /* Black*/
+         overflow-x: hidden;
+         /* Disable horizontal scroll */
+         padding-top: 60px;
+         /* Place content 60px from the top */
+         transition: 0.5s;
+         /* 0.5 second transition effect to slide in the sidenav */
+         border-radius: 0px;
+         border: 0px solid #435943;
+     }
+     /* Position and style the close button (top right corner) */
+     .worldcontrolsidenav .closebtn {
+         position: absolute;
+         top: 0;
+         font-size: 36px;
+     }
+     /* The container <div> - needed to position the dropdown content */
+     .dropdown {
+         position: relative;
+         display: inline-block;
+     }
+     #sidepartprev {
+         float: right;
+         padding-top: 60%;
+         padding-right: 25px;
+     }
+     #sidepartnext {
+         float: left;
+         padding-top: 60%;
+         padding-bottom: 10px;
+         /*padding-right: 150px;*/
+     }
+     header {
+         display: none;
+     }
+     #mobilespacing {
+         display: block;
+     }
+     #worksarea {
+         width: 85%;
+         margin-left: 10%;
+         margin-top: 5%;
+     }
+     #mainsideimg img {
+         width: 8%;
+         display: block;
+         position: fixed;
+         top: 5%;
+     }
+     #pullednav {
+         padding-top: 2%;
+         display: block;
+     }
+     #pullednav a {
+         text-decoration: none;
+         color: black;
+         padding-left: 15px;
+         font-size: 20px;
+     }
+     #pullednav ul li {
+         padding-top: 20px;
+     }
+     #sidebreadcrumb {
+         font-family: 'libre_baskervilleregular';
+         font-size: 12px;
+         padding-top: 20px;
+         padding-bottom: 20px;
+         padding-left: 15px;
+         display: block;
+     }
+     #sidebreadcrumb a {
+         font-size: 12px;
+         color: black;
+         font-family: 'libre_baskervilleitalic';
+         display: inline;
+     }
+     #sidelogo {
+         float: left;
+         display: block;
+         width: 35%;
+         padding-right: 2%;
+     }
+     #sidelogo img {
+         width: 100%;
+     }
+     #sidename {
+         float: left;
+         font-size: 26px;
+         padding-top: 35px;
+         display: block;
+     }
+     #sideportname {
+         font-family: 'libre_baskervillebold';
+         display: block;
+         font-size: 26px;
+     }
+     #sidetag {
+         font-size: 16px;
+         font-family: 'libre_baskervilleitalic';
+         padding-top: 90px;
+         padding-left: 30px;
+         display: block;
+     }
+     /* The side navigation menu */
+     .mainsidenav {
+         height: 75%;
+         /* 100% Full-height */
+         width: 0;
+         /* 0 width - change this with JavaScript */
+         position: fixed;
+         /* Stay in place */
+         z-index: 1;
+         /* Stay on top */
+         top: 0%;
+         left: 0;
+         background-color: #82a182;
+         ;
+         /* Black*/
+         overflow-x: hidden;
+         /* Disable horizontal scroll */
+         padding-top: 60px;
+         /* Place content 60px from the top */
+         transition: 0.5s;
+         /* 0.5 second transition effect to slide in the sidenav */
+         border-radius: 0px;
+         border: 0px solid #435943;
+     }
+     /* The navigation menu links */
+     .closebtn {
+         padding: 8px 8px 8px 32px;
+         text-decoration: none;
+         font-size: 25px;
+         color: #111111;
+         display: block;
+         transition: 0.3s
+     }
+     /* Position and style the close button (top right corner) */
+     .mainsidenav .closebtn {
+         position: absolute;
+         top: 0;
+         right: 25px;
+         font-size: 36px;
+         margin-left: 50px;
+     }
