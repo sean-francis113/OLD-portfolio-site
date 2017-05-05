@@ -447,7 +447,7 @@
  #clear_text,
  #clear_num {
      padding-bottom: 10px;
-     font-size: 100%;
+     font-size: 95%;
  }
  
  #footercontent a {
@@ -580,6 +580,17 @@
     padding-left: 15px;
     display: inline;
 }
+
+#resumedownloadcontrol {
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
+
+#resumedownloadcontrol img {
+    width: 98%;
+    text-align: center;
+}
+
  /* Dropdown Button */
  
  .dropbtn {
