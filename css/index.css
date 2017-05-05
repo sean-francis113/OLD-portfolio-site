@@ -1718,6 +1718,10 @@ h3 {
         display: inline;
     }
     
+    #sidesocialbuttons ul li img{
+        width: 32px;
+    }
+    
     /* The side navigation menu */
     .mainsidenav {
         height: 75%;
