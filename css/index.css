@@ -222,12 +222,14 @@ header {
 
 #portname {
     font-family: 'libre_baskervillebold';
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #tagline {
     font-family: 'libre_baskervilleitalic';
     padding-top: 90px;
+    width: 50%;
+    margin: 0;
 }
 
 #tag {
@@ -430,9 +432,9 @@ h3 {
 .charinfo img,
 .paintinginfo img,
 .hpaintinginfo img {
-    margin-bottom: 2%;
-    margin-top: 2%;
-    width: 75%;
+    margin-bottom: 25px;
+    margin-top: 50px;
+    width: 60%;
 }
 
 .homeworldinfo a,
@@ -499,6 +501,22 @@ h3 {
     display: none;
 }
 
+#socialbuttons,
+#sidesocialbuttons{
+    float: right;
+    padding-bottom: 15px;
+    padding-right: 40px;
+}
+
+#sidesocialbuttons{
+    display: none;
+}
+
+#socialbuttons ul li,
+#sidesocialbuttons ul li{
+    padding-left: 15px;
+    display: inline;
+}
 
 /* The navigation menu links */
 
@@ -1268,7 +1286,7 @@ h3 {
         margin-top: 75px;
     }
     #pageTitle {
-        font-size: 35px;
+        font-size: 40px;
         text-align: center;
         padding-top: 2.5%;
     }
@@ -1673,10 +1691,30 @@ h3 {
     
     #mobilelink{
         display: block;
+        padding-bottom: 10px;
     }
     
     #computerlink{
         display: none;
+    }
+    
+    #sidesocialbuttons{
+        float: right;
+        padding-bottom: 15px;
+        padding-right: 40px;
+    }
+
+    #socialbuttons{
+        display: none;
+    }
+
+    #sidesocialbuttons{
+        display: block;
+    }
+    
+    #sidesocialbuttons ul li{
+        padding-left: 15px;
+        display: inline;
     }
     
     /* The side navigation menu */

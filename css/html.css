@@ -566,6 +566,23 @@ h3 {
     padding-left: 50px;
 }
 
+#socialbuttons,
+#sidesocialbuttons{
+    float: right;
+    padding-bottom: 15px;
+    padding-right: 40px;
+}
+
+#sidesocialbuttons{
+    display: none;
+}
+
+#socialbuttons ul li,
+#sidesocialbuttons ul li{
+    padding-left: 15px;
+    display: inline;
+}
+
 
 /* The navigation menu links */
 
@@ -2488,6 +2505,25 @@ h3 {
         padding-top: 15px;
         padding-bottom: 10px;
         padding-left: 50px;
+    }
+        
+    #sidesocialbuttons{
+        float: right;
+        padding-bottom: 15px;
+        padding-right: 40px;
+    }
+
+    #socialbuttons{
+        display: none;
+    }
+
+    #sidesocialbuttons{
+        display: block;
+    }
+    
+    #sidesocialbuttons ul li{
+        padding-left: 15px;
+        display: inline;
     }
     /* The navigation menu links */
     .closebtn {
